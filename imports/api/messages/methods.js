@@ -10,10 +10,10 @@ export const saveMessage = new ValidatedMethod({
       date: { type: Date }
     }).validator(),
   run({ content, date }) {
-/*    if(!this.userId){
+    if(!this.userId){
         throw new Meteor.Error("messages.add.unauthorized",
         "Cannot create new message if user not logged in");
-    }*/
+    }
     return Messages.insert({content:content,createdAt:date,authorId:this.userId});
   }
 });

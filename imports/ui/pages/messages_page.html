@@ -1,5 +1,7 @@
 <template name="messagesPage">
 
       {{> messages messages=messagesCursor}}
-      {{> newMessage}}
+      <div>
+          {{ > React component=NewMessage sendHandler=sendHandler}}
+      </div>
 </template>

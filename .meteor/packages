@@ -23,3 +23,7 @@ mdg:validated-method
 aldeed:simple-schema
 kadira:flow-router
 kadira:blaze-layout
+react-template-helper
+accounts-password
+useraccounts:semantic-ui
+useraccounts:flow-routing

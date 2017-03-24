@@ -31,3 +31,13 @@ FlowRouter.route("/register", {
           main: 'registerPage'});
     }
 });
+
+AccountsTemplates.configureRoute('signIn', {
+  name: 'login',
+  path: '/login'
+});
+
+AccountsTemplates.configureRoute('signUp', {
+  name: 'register',
+  path: '/register'
+});
